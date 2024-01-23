@@ -1,6 +1,4 @@
 
-
-
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2?',
