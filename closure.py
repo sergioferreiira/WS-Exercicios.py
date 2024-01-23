@@ -34,13 +34,5 @@ for n in lista_multiplicadores:
 print()
 print()
 
-def multiplicar(funcao, *args):
-    return funcao(*args)
 
-multiplica = multiplicar(
-    lambda multiplicador: lambda numero: f'voce está multiplicando o numero {numero} por {multiplicador} usando lambda' , valor_multiplicar
-)
-
-for n in lista_multiplicadores:
-    print(multiplica(n))
 
