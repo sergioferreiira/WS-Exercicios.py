@@ -89,4 +89,3 @@ for lista in lista_de_listas_de_inteiros:
     print(encontraPrimeiroRepetidor(lista))
 
 
-# 
