@@ -1,10 +1,11 @@
-# import copy
+import copy
 
-# from importar_package import produtos
+from importar_package import produtos
 
 
 # Aumente os preços dos produtos a seguir em 10%
 # Gere novos_produtos por deep copy (cópia profunda)
+
 
 # novos_produtos = [
 #     {**p, 'preco': round(p['preco'] * 1.1 , 2)}
@@ -50,11 +51,11 @@
 # print(*produtos, sep="\n")
 
 
-def mostro_kwargs(*args , **kwargs):
-    print(args)
+# def mostro_kwargs(*args , **kwargs):
+#     print(args)
     
-    print(*kwargs.values() , sep="\n")
+#     print(*kwargs.values() , sep="\n")
 
-mostro_kwargs(1 ,2, 3,
-    nome= 'Produto 5', preco= 10.00,
-    nome2= 'Produto 1', preco2= 22.32,)
+# mostro_kwargs(1 ,2, 3,
+#     nome= 'Produto 5', preco= 10.00,
+#     nome2= 'Produto 1', preco2= 22.32,)

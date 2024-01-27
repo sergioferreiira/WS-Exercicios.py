@@ -1,0 +1,24 @@
+list comprehension
+
+list = [x for x in list(range(10))]
+
+nesta lista estamos tratando do primeiro X que e equivalente ao valor que será atribuido na lista, o for a seguir será o loop que ira percorrer cada range no range de 10,
+podemos realizar MAPEAMENTO dos dados desta lista desta forma:
+
+digamos que eu queira multiplicar por 2 cada valor X que está lista possui, na forma padrao seria:
+
+lista = [1,2,3,4,5...]
+
+novalista = []
+
+for n in lista:
+    resultado = n * 2
+    novalista.append(resultado)
+
+print(novalista)
+
+porem com listcomprehension podemos manipular esses dados de forma diferente sendo:
+
+lista = [
+    
+]
