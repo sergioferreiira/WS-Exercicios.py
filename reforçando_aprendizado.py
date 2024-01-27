@@ -41,4 +41,24 @@
 # mostro_desempacotado_kwargs(**desempacotar)
 
 
+produtos = [
+    {'nome': 'p1', 'preco': 20, },
+    {'nome': 'p2', 'preco': 10, },
+    {'nome': 'p3', 'preco': 30, },
+]
+novos_produtos = [
+    produto
+    for produto in produtos
+]
 
+print(*novos_produtos , sep='\n')
+
+# lista = [1,2,3,4,5]
+
+# novalista = []
+
+# for n in lista:
+#     resultado = n * 2
+#     novalista.append(resultado)
+
+# print(novalista)
