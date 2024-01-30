@@ -13,28 +13,28 @@
 # Resultado
 # [('Salvador', 'BA'), ('Ubatuba', 'SP'), ('Belo Horizonte', 'MG')]
 
-import copy
-
-citys = ['Salvador', 'Ubatuba', 'Belo Horizonte']
-uf = ['BA', 'SP', 'MG', 'RJ']
-
-nova_cidade = copy.deepcopy(citys)
-nova_uf = copy.deepcopy(uf)
 
 
-novo_dicionario = {}
+nomes = ['Salvador', 'Ubatuba', 'Belo Horizonte']
+valores = ['BA', 'SP', 'MG', 'RJ']
 
-# def zipper(*args ,**kwargs):
-#     print(*args)
-#     def unir_uf(*ufs):
-#         for cidade in args:
-#             a = cidade
-#         return a
-#     return 
+nova_lista_atualizada = []
 
-# executa_funcao = zipper(dict_de_cidades)
-# estados = executa_funcao(uf)
 
-# print(estados)
+def zipper(x):
+    def unir_valores(y):
+        uniao = zip(x ,y)
+        resultado = list(uniao)
+        return resultado
+    return unir_valores
+
+
+passar_zipper = zipper(nomes)
+uniao_do_nome_uf = passar_zipper(valores)
+
+print(uniao_do_nome_uf)
+
+
+
 
 
