@@ -14,15 +14,17 @@
 # [('Salvador', 'BA'), ('Ubatuba', 'SP'), ('Belo Horizonte', 'MG')]
 
 
-
+# Use todos os valores da menor lista.
 nomes = ['Salvador', 'Ubatuba', 'Belo Horizonte']
 valores = ['BA', 'SP', 'MG', 'RJ']
 
 nova_lista_atualizada = []
 
-
+# função zipper
 def zipper(x):
     def unir_valores(y):
+        # O trabalho dessa função será unir duas
+        # listas na ordem.
         uniao = zip(x ,y)
         resultado = list(uniao)
         return resultado
@@ -33,6 +35,8 @@ passar_zipper = zipper(nomes)
 uniao_do_nome_uf = passar_zipper(valores)
 
 print(uniao_do_nome_uf)
+# Resultado
+# [('Salvador', 'BA'), ('Ubatuba', 'SP'), ('Belo Horizonte', 'MG')]
 
 
 
