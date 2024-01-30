@@ -44,6 +44,7 @@ def criadora_de_funcao(func):
         return resultado
     return tratadora_de_param
 
+# os decoradores são utilizados de baixo para cima caso necessario atualizar com mais um decorador
 @criadora_de_funcao
 def soma(x ,y):
     return x + y
