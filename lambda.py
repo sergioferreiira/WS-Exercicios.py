@@ -16,37 +16,37 @@
 # sorted(lista)
 
 
-# #######APRESENTAÇÃO DE LAMBDA ###################
+# ####### APRESENTAÇÃO DE LAMBDA ###################
 
 
-# lista = [
-#     {'nome': 'Luiz', 'sobrenome': 'miranda'},
-#     {'nome': 'Maria', 'sobrenome': 'Oliveira'},
-#     {'nome': 'Daniel', 'sobrenome': 'Silva'},
-#     {'nome': 'Eduardo', 'sobrenome': 'Moreira'},
-#     {'nome': 'Aline', 'sobrenome': 'Souza'},
-# ]
+lista = [
+    {'nome': 'Luiz', 'sobrenome': 'miranda'},
+    {'nome': 'Maria', 'sobrenome': 'Oliveira'},
+    {'nome': 'Daniel', 'sobrenome': 'Silva'},
+    {'nome': 'Eduardo', 'sobrenome': 'Moreira'},
+    {'nome': 'Aline', 'sobrenome': 'Souza'},
+]
 
 
-# def exibir(lista):
-#     for lista in lista:
-#         print(lista)
-#     print()
+def exibir(lista):
+    for lista in lista:
+        print(lista)
+    print()
 
-# l1 = sorted(lista, key= lambda item: item['nome'])
-# l2 = sorted(lista, key= lambda item: item['sobrenome'])
+l1 = sorted(lista, key= lambda item: item['nome'])
+l2 = sorted(lista, key= lambda item: item['sobrenome'])
 
-# exibir(l1)
-# exibir(l2)
+exibir(l1)
+exibir(l2)
 
 ###################################################
 
-def multiplicar(funcao, *args):
-    return funcao(*args)
+# def multiplicar(funcao, *args):
+#     return funcao(*args)
 
-multiplica = multiplicar(
-    lambda multiplicador: lambda numero: f'voce está multiplicando o numero {numero} por {multiplicador} usando lambda' , 2
-)
+# multiplica = multiplicar(
+#     lambda multiplicador: lambda numero: f'voce está multiplicando o numero {numero} por {multiplicador} usando lambda' , 2
+# )
 
-for n in lista_multiplicadores:
-    print(multiplica(n))
+# for n in lista_multiplicadores:
+#     print(multiplica(n))

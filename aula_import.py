@@ -1,6 +1,6 @@
-import teste_import
+import Section4.hackerrank as hackerrank
 
-print(teste_import.soma(10 ,2))
+print(hackerrank.soma(10 ,2))
 
 from importar_package import teste_multiplicar
 
