@@ -15,12 +15,34 @@
 # lista.sort(reverse=True)
 # sorted(lista)
 
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# \/\/ MINHA COMPREENSÃO SOBRE O CONTEUDO \/\/ -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+"""
+O LAMBDA e a redução de uma função para uma linha de codigo, assim deixando o codigo menos legivel porem mais curto
+um exemplo é:
+
+\/\/\/\/\/\/\/\/ MODO TRADICIONAL
+def soma(x , y)
+    return x + y
+
+definido a assinatura da função passamos quais serão os parametros de execução da mesma
+e retornamos normalmente o tratamento realizado dos parametros
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/  UTILIZANDO LAMBDA
+soma = lambda x , y: x + y
+
+
+no exemplo LAMBDA é utilizado como a assinatura da função e os parametros são passados
+fora de seus devidos () e o tratamento dos parametros já é retornado após os : sem 
+precisar do return
+"""
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# /\/\ MINHA COMPREENSÃO SOBRE O CONTEUDO /\/\ -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
 
 # ####### APRESENTAÇÃO DE LAMBDA ###################
 
 
 lista = [
-    {'nome': 'Luiz', 'sobrenome': 'miranda'},
+    {'nome': 'Luiz', 'sobrenome': 'Miranda'},
     {'nome': 'Maria', 'sobrenome': 'Oliveira'},
     {'nome': 'Daniel', 'sobrenome': 'Silva'},
     {'nome': 'Eduardo', 'sobrenome': 'Moreira'},
@@ -33,7 +55,11 @@ def exibir(lista):
         print(lista)
     print()
 
-l1 = sorted(lista, key= lambda item: item['nome'])
+def ordena(x):
+    return x['nome']
+
+
+l1 = sorted(lista, key= ordena)
 l2 = sorted(lista, key= lambda item: item['sobrenome'])
 
 exibir(l1)
