@@ -39,8 +39,8 @@ print(user_input)
 
 
 def criadora_de_funcao(func):
-    def tratadora_de_param(*args, **kwargs):
-        resultado = func(*args, **kwargs)
+    def tratadora_de_param(*args):
+        resultado = func(*args)
         return resultado
     return tratadora_de_param
 

@@ -13,29 +13,29 @@ dc = {
     # if chave != 'categoria'
 }
 
-lista = [
-    ('a', 'valor a'),
-    ('b', 'valor b'),
-    ('c', 'valor c'),
-]
+# lista = [
+#     ('a', 'valor a'),
+#     ('b', 'valor b'),
+#     ('c', 'valor c'),
+
 # dc = {
 #     chave: valor
 #     for chave, valor in lista
 # }
 
-s1 = {2 ** i for i in range(10)}
+# s1 = {2 ** i for i in range(10)}
 # print(s1)
 
 
 
-lista = [
-    ('a', 'valor 1'),
-    ('b', 'valor 2'),
-    ('b', 'valor 3'),
-    ('b', 'valor 4'),
-    ('b', 'valor 5'),
-    ('b', 'valor 6'),
-]
+# lista = [
+#     ('a', 'valor 1'),
+#     ('b', 'valor 2'),
+#     ('b', 'valor 3'),
+#     ('b', 'valor 4'),
+#     ('b', 'valor 5'),
+#     ('b', 'valor 6'),
+# ]
 
 
 
