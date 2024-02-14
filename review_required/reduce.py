@@ -1,4 +1,4 @@
-# from itertools import reduce
+from functools import reduce
 
 
 def print_iter(iterador):
@@ -14,11 +14,11 @@ produtos = [
     {'nome' : 'Produto 2' , 'preco' : 109.99},
 ]
 
-total = 0 
 
-for p in produtos['preco']:
-    total += p
+total = reduce(
+    lambda ac , p : ac + p['preco'],
+    produtos,
+    0
+)
 
 print(total)
-
-print(*produtos.)
