@@ -1,7 +1,7 @@
 import json
 
 pessoa = {
-    'nome': 'Luiz Otávio 2',
+    'nome': 'Luiz Otávio ',
     'sobrenome': 'Miranda',
     'enderecos': [
         {'rua': 'R1', 'numero': 32},
@@ -20,9 +20,17 @@ novo_arquivo_caminho += 'auladoluiz.json'
 ensure_ascii=False e para fazer com que o item salvo no json fique formatado sem os problemas ascii
 '''
 
-
+'''
+    Aqui temos como criar um arquivo em json \/
+'''
 with open(novo_arquivo_caminho , 'w+') as arquivo:
     json.dump(pessoa, arquivo , ensure_ascii=False , indent= 2 )
+'''
+    Aqui temos como abrir ou buscar atributos \/
+'''
+with open(novo_arquivo_caminho , 'r') as arquivo:
+    pessoa = json.load(arquivo)
+    print(pessoa['nome'])
 
 
 
