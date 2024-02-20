@@ -35,6 +35,7 @@ def par_impar(numero):
 
 numeros_organizados = sorted(numeros , key= par_impar)
 print(numeros_organizados)
+
 resultado = groupby(numeros_organizados , key= par_impar)
 
 for grupo , numeros in resultado:
