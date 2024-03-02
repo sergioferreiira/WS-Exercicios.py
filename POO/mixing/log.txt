@@ -1,0 +1,10 @@
+Sucess: qualquer coisa (LogFileMixin)
+
+Error: que legal (LogFileMixin)
+Sucess: qualquer coisa (LogFileMixin)
+Error: que legal (LogFileMixin)
+Sucess: qualquer coisa (LogFileMixin)
+Error: que legal (LogFileMixin)
+Sucess: qualquer coisa (LogFileMixin)
+Error: que legal (LogFileMixin)
+Sucess: Importei e testei olha que legal (LogFileMixin)
