@@ -4,5 +4,8 @@
     -Procedural;
     -Orientado Objetos
 
+    DECLARATIVOS: avaliação de expressoes e termos.
 
+    -Funcional;
+    -Lógico
 '''
